@@ -1,38 +1,77 @@
-.App {
+*{
+  margin: 0
+}
+.brief__div{
+  margin-left:50px;
+  margin-bottom: 50px;
+}
+.skills__div{
+  /* margin-top: 10vw; */
+  /* background: linear-gradient(white ,rgb(115, 114, 114)); */
+  padding-bottom: 10vw;
+ 
+}
+.skills__div_light{
+  margin-top: 10vw;
+  /* background: linear-gradient(rgb(115, 114, 114),rgb(81, 81, 81)); */
+  padding-bottom: 10vw;
+}
+.projects__div{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vw;
+  background: linear-gradient(white,whitesmoke);
+  padding-bottom: 10vw;
+}
+.projects__div_light{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vw;
+  background: linear-gradient(rgb(44, 43, 43),rgb(42, 41, 41));
+  padding-bottom: 10vw;
+}
+.App_light{
+  background: linear-gradient(rgb(44, 43, 43),rgb(42, 41, 41))
+}
+.darkend{
+  color: white;
+  font-family: cursive;
   text-align: center;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lightend{
+  color:gray;
+  font-family: cursive;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 776px) {
+  .App{
   display: flex;
   flex-direction: column;
+  
+}
+.App_light{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.skills__div{
+  display: grid;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.projects__div{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vw;
+  background: linear-gradient(white,whitesmoke);
+  padding-bottom: 10vw;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,0 +1,95 @@
+.brief{
+    display: flex;
+    flex-direction: row;
+}
+.intro{
+    margin-left: 2vw;
+    flex:0.90
+}
+.name{
+    /* font-size: 2vw;
+    font-family:'Verdana';
+    animation :name 5s infinite ease-in-out ; */
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite alternate;
+    display: inline-block;
+        font-size: 3vw;
+        font-family:'Verdana';
+
+    
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.work{
+    font-size: 10vw;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      padding: 0;
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 5s linear infinite alternate-reverse;
+      display: inline-block;
+          font-size: 10vw;
+          font-family:'Verdana';
+    
+}
+
+.img{
+    margin-top: 20px;
+}
+.short{
+    font-size:2vw;
+    margin-top: 2vw;
+    color: gray
+}
+@media screen and (max-width: 1023px) {
+    .brief{
+        z-index:1;
+    }
+    .img{
+        display: none;
+    }
+    .short{
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width: 776px) {
+    .brief{
+        margin-top: 10vw;
+    }
+    .short{
+        font-size: 3vw;
+    }
+}

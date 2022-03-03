@@ -1,0 +1,16 @@
+.logo{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+}
+.contact{
+  
+    margin-top: 10px;
+}
+.contact>h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:gray;
+    font-size:3vw;
+    margin-left: 20px;
+}
